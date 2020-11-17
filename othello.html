@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel=stylesheet href=othello.css>
+    <title>othello</title>
+</head>
+
+<body> 
+    <div class="grid" id="grid">
+        <table id="board"></table>
+        <div class="black-status-display">
+            <p class="now-turn" id="black-turn-display">black</p>
+            <div class="now-black-pieces" id="now-black-pieces">2</div>
+            <button class="pass-button" id="black-pass-button">PASS</button>
+        </div>
+        <div class="white-status-display">
+            <p class="not-now-turn" id="white-turn-display">white</p>
+            <div class="now-white-pieces" id="now-white-pieces">2</div>
+            <button class="pass-button" id="white-pass-button">PASS</button>
+        </div>
+        <button id="next-game-button" class="next-game-button">NEXTGAME</button>
+        <button id="display-can-put-position-button">駒を置ける場所：<br>非表示中</button>
+        <button id="change-cpu-mode-button">CPU: ON</button>
+    </div>
+
+    <button id="start-game-button">Game Start</button>
+    <div id="game-mode-selecter">
+        <button id="normal-mode-button">Normal Mode</button>
+        <button id="bug-mode-button">Bug Mode</button>
+    </div>
+    <div id="cpu-mode-selecter">
+        <button id="cpu-mode-on-button">CPU Mode ON</button>
+        <button id="cpu-mode-off-button">CPU Mode OFF</button>
+    </div>
+    <div id="player-turn-selecter">
+        <button id="player-turn-black-button">Player Black<br>(CPU White)</button>
+        <button id="player-turn-white-button">Player White<br>(CPU Black)</button>
+    </div>
+
+    <script src="gameStart.js"></script>
+    <script src=othello.js></script>
+</body>
+
+</html>
